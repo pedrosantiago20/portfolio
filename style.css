@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+}
+
+nav#menu1 {
+    display: block;
+}
+
+nav#menu1 ul {
+    list-style: none;
+    position: fixed;
+    left: 830px;
+    top: 200px;
+}
+
+nav#menu1 ul li {
+    padding: 10px;
+    
+    
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 48px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+}   
+
+nav#menu1 ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav#menu1 ul li a:hover {
+    color: #696969;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+nav#menu2 {
+    display: inline-block;
+}
+
+nav#menu2 ul {
+    list-style: none;
+    position: absolute;
+    right: 60px;
+    top: 3px;
+    
+    
+}
+
+nav#menu2 ul li {
+    display: inline-block;
+    padding: 25px;
+      
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 48px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+}   
+
+nav#menu2 ul li a {
+    text-decoration: none;
+    color: #696969;
+
+}
+
+nav#menu2 ul li a.current {
+    color: black;
+
+}
+
+nav#menu2 ul li a:hover {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+
+
+.logo {
+position: absolute;
+left: 60px;
+top: 0px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-size: 40px;
+line-height: 100px;
+list-style: none;
+text-decoration: none;
+color: black;
+}
+
+
+
+.titulo {
+    position: fixed;
+    width: 656px;
+    height: 229px;
+    left: 300px;
+    top: 230px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80%;
+    color: black;  
+}
+
+.subtitulo {
+
+    position: fixed;
+    width: 346px;
+    height: 36px;
+    left: 300px;
+    top: 370px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: black;
+}
+
+.animation {
+    animation: cursor 600ms infinite normal;
+}
+
+@keyframes cursor{
+    from {
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+
+        margin-top: 165px;
+        position: fixed;
+        width: 80px;
+        left: 600px;
+        top: 148px;
+    }
+    to {
+        border: 1px solid transparent;
+        transform: rotate(90deg);
+
+        margin-top: 165px;
+        position: fixed;
+        width: 80px;
+        left: 600px;
+        top: 148px;
+    }
+}
+
+
+.linha {
+    margin-top: 28vh;
+    position: fixed;
+    width: 400px;
+    left: 530px;
+    top: 135px;
+
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}
+
+.portfolio {
+    margin-top: 200px;
+    display: absolute;
+    column-count: 3;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    font-weight: 10;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.sobre {
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    text-align: center;
+}
+
+.linha2 {
+    position: absolute;
+    width: 380px;
+    height: 0px;
+    left: 500px;
+    top: 355px;
+
+    border: 1px solid #000000;
+}
+
+.aspas {
+    margin-top: 150px;
+    font-weight: 20;
+    font-size: 259px;
+    line-height: 45px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    text-align: center;
+}
+
+.contato {
+    margin-top: 200px;
+    margin-left: 480px;
+
+
+}
+
+input {
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    width: 400px;
+    outline: none;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: #000000;
+
+}
+
+input::placeholder {
+    color:#000000
+}
+
+.msg {
+    margin-top: 80px;
+}
+
+button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 880px;
+    top: 430px;
+    border: none;
+    background: #000000;
+    
+    font-family: 'Roboto';
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    
+}
+
+button:hover {
+    transition: all 0.5s ease-in;
+    background-color: gray;
+}
+
+.rodape {
+position: absolute;
+bottom: 0;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 27px;
+
+}
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
